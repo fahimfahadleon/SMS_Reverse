@@ -47,7 +47,7 @@ dependencies {
     implementation (libs.okio)
 
 
-
+    implementation (libs.play.services.auth)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
