@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.telephony.SmsMessage;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.horoftech.smsreverse.viewmodel.ActivityMainViewModel;
 
@@ -28,7 +27,7 @@ public class SmsReceiver extends BroadcastReceiver {
                         SmsMessage smsMessage = SmsMessage.createFromPdu((byte[]) pdu);
                         String sender = smsMessage.getDisplayOriginatingAddress();
                         String message = smsMessage.getMessageBody();
-                        model.onMessageReceived(sender,message);
+                        model.onMessageReceived(message);
                     }
                 }
             }

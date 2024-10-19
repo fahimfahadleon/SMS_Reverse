@@ -1,8 +1,23 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("/home/fahim/AndroidStudioProjects/SMSReverse/key.jks")
+            storePassword = "64742812"
+            keyAlias = "key0"
+            keyPassword = "64742812"
+        }
+        create("release") {
+            storeFile = file("/home/fahim/AndroidStudioProjects/SMSReverse/key.jks")
+            storePassword = "64742812"
+            keyAlias = "key0"
+            keyPassword = "64742812"
+        }
+    }
     namespace = "com.horoftech.smsreverse"
     compileSdk = 34
 
@@ -48,6 +63,7 @@ dependencies {
 
 
     implementation (libs.play.services.auth)
+    implementation(libs.firebase.database)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

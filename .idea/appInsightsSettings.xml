@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.horoftech.smsreverse" />
+                  <option name="mobileSdkAppId" value="1:929793702879:android:2c06fccae8f4b10cb7626a" />
+                  <option name="projectId" value="sms-reverse" />
+                  <option name="projectNumber" value="929793702879" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

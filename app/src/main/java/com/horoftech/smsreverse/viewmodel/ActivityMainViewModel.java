@@ -14,8 +14,22 @@ public class ActivityMainViewModel extends ViewModel {
     public static final String SAVE = "save";
     public MutableLiveData<String>action = new MutableLiveData<>();
     String url;
+    String receiver;
+    String token;
+    public void setToken(String token){
+        this.token = token;
+    }
+    public String getToken(){
+        return token;
+    }
     public void setUrl(String url){
         this.url = url;
+    }
+    public void setReceiver(String receiver){
+        this.receiver = receiver;
+    }
+    public String getReceiver(){
+        return receiver;
     }
     public String getUrl(){
         return url;
@@ -26,10 +40,9 @@ public class ActivityMainViewModel extends ViewModel {
             action.setValue(SAVE);
         }
     }
-    public void onMessageReceived(String sender,String message){
+    public void onMessageReceived(String message){
         try {
             JSONObject jsonObject = new JSONObject();
-            jsonObject.put("sender",sender);
             jsonObject.put("message",message);
             this.message.setValue(jsonObject);
         }catch (Exception e){

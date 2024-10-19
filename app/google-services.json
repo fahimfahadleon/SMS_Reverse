@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "929793702879",
+    "firebase_url": "https://sms-reverse-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sms-reverse",
+    "storage_bucket": "sms-reverse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929793702879:android:2c06fccae8f4b10cb7626a",
+        "android_client_info": {
+          "package_name": "com.horoftech.smsreverse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCap1yQm8XNFdLkBQ6n52ZQKRqs7smlstc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

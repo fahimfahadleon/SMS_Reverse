@@ -30,14 +30,32 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
+            android:id="@+id/token"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="Token"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="Receiver"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@id/token" />
+        <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:hint="link"
+            android:hint="Link"
             android:padding="8dp"
-            app:layout_constraintTop_toBottomOf="@id/title" />
+            app:layout_constraintTop_toBottomOf="@id/editText1" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +83,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="time"
+            android:text="receiving time"
             android:layout_marginEnd="8dp"
             app:layout_constraintTop_toBottomOf="@id/save"
             android:id="@+id/time"/>
